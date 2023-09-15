@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
+    background-color: #FFF;
 
 }
 
@@ -53,8 +54,8 @@ h2 {
 .header-navigation {}
 
 .logo {
-        color: var(--NAVY-BLUE, #2E2F42);
-        font-family: Raleway;
+        color: #4D5AE5;
+        font-family: Raleway, sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.16;
@@ -64,8 +65,7 @@ h2 {
 }
 
 .logo span {
-    color: #4D5AE5;
-    font-family: Raleway;
+    color: var(--NAVY-BLUE, #2e2f42);
 }
 
 .header-menu-list {}
@@ -83,11 +83,11 @@ h2 {
         letter-spacing: 0.02em;
 }
 
-.header-menu-link:hover .header-menu-link:focus {
-    color: var(--OCEAN, #404BBF);
+.header-menu-link:hover, .header-menu-link:focus {
+    color: var(--OCEAN, #404bbf);
 }
 
-.address {}
+.address {font-style: normal}
 
 .address-list {}
 
@@ -104,15 +104,18 @@ h2 {
         letter-spacing: 0.02em;
 }
 
-.address-list-link:hover .address-list-link:focus {
-    color: var(--OCEAN, #404BBF);
+.address-list-link:hover, .address-list-link:focus {
+    color: var(--OCEAN, #404bbf);
 }
 
 /*---------------------*/
+.main {}
 
 /*-----------HERO----------*/
 
-.hero {}
+.hero {
+    background-color: #2e2f42;
+}
 
 .hero-title {
     color: var(--WHITE, #FFF);
@@ -130,13 +133,18 @@ h2 {
     color: var(--WHITE, #FFF);
     
         /* Button Text */
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         /* 150% */
         letter-spacing: 0.04em;
+        background-color: #4D5AE5;
         cursor: pointer;
+}
+
+.hero-btn:hover, .hero-btn:focus {
+    background-color: #404BBF;
 }
 
 /*---------------------*/
@@ -165,13 +173,17 @@ h2 {
 
 /*-----------OURTEAM----------*/
 
-.teamsection {}
+.teamsection {
+    background-color: #F4F4FD;
+}
 
 .teamsection-title {}
 
 .teamsection-list {}
 
-.teamsection-item {}
+.teamsection-item {
+    background-color: #FFFFFF;
+}
 
 .teamsection-image {}
 
@@ -204,7 +216,12 @@ h2 {
 /*---------------------*/
 
 /*-----------FOOTER----------*/
+.footer {
+    background-color: #2e2f42;
+}
 
 .footer-logo-link {}
 
-.footer-text {}
+.footer-text {
+    color: #F4F4FD;
+}
